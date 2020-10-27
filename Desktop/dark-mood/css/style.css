@@ -1,0 +1,59 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --bg: #efefed;
+    --txt-color: #111111;
+    --txt-bg:#dddddb;
+  }
+  .dark{
+    --bg:#292c35;
+    --txt-color: #c2c4c5;
+    --txt-bg:#1d2129;
+
+  }
+  body{
+      background: var(--bg);
+  }
+.content{
+    margin: auto;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    width: 60%;
+    text-align: center;
+    background-color: var(--txt-bg);
+    color: var(--txt-color);
+
+}
+.content h2{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.content button{
+    color: var(--btn-color);
+    background-color: var(--btn-bg);
+}
+.toggler{
+    float: right;
+    padding: 25px;
+}
+.toggler button{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    
+}
+.toggler button:focus{
+    outline: none;
+}
+.toggler button img{
+    width: 100%;
+}
