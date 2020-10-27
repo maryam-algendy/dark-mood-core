@@ -1,7 +1,6 @@
 function myFunction() {
     var element = document.body;
     element.classList.toggle("dark");
-    
     var img=document.getElementById("img").src;
     if(img=="http://127.0.0.1:5500/dark.png"){
         document.getElementById("img").src="http://127.0.0.1:5500/light.png"
@@ -15,7 +14,6 @@ function myFunction() {
 window.onload=checkTheme();
 function checkTheme(){
     const theme=localStorage.getItem("theme");
-    console.log(theme);
     if(theme==="dark"){
         myFunction();
     }
